@@ -1,0 +1,132 @@
+.navbar-light .navbar-brand {
+  color: #fa1e0e;
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+}
+label {
+  font-family: "Lateef", cursive;
+  /* font-family: "Dancing Script", cursive; */
+  color: #e40017;
+  font-weight: 700;
+  margin-right: 10px;
+}
+a {
+  font-family: "Lateef", cursive;
+  font-weight: 700;
+  font-size: 26px;
+}
+p {
+  margin-top: 55px;
+  font-family: "Lateef", cursive;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+body {
+  background: url("heart.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.row {
+  height: 50vh;
+}
+.cal-btn {
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  background: #e93b81;
+  padding: 10px 60px 10px 60px;
+  text-decoration: none;
+  border: none;
+}
+
+.cal-btn:hover {
+  background: #cf0000;
+  background-image: -webkit-linear-gradient(top, #cf0000, #e93b81);
+  background-image: -moz-linear-gradient(top, #cf0000, #e93b81);
+  background-image: -ms-linear-gradient(top, #cf0000, #e93b81);
+  background-image: -o-linear-gradient(top, #cf0000, #e93b81);
+  background-image: linear-gradient(to bottom, #cf0000, #e93b81);
+  text-decoration: none;
+}
+
+.input-1,
+.input-2 {
+  border: thin solid #f5abc9;
+  border-radius: 10px;
+  height: 3rem;
+  width: 250px;
+  background-color: #faf3f3;
+}
+form {
+  z-index: 10;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .cal-btn {
+    position: relative;
+    left: 10px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .cal-btn {
+    position: relative;
+    right: 20px;
+  }
+}
+
+/* input highlight when entered */
+
+input[type="text"],
+textarea {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #dddddd;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  box-shadow: 0 0 5px #f5abc9;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 3px solid #e93b81;
+}
+input[type="text"]::placeholder {
+  /* Firefox, Chrome, Opera */
+  text-align: center;
+  font-style: normal;
+}
+.about {
+  color: #1597bb;
+}
+.result-div {
+  height: 50vh;
+  color: #fa1e0e;
+}
+
+.email-1 {
+  position: relative;
+  bottom: 10x;
+}
