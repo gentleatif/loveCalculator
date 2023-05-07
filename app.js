@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const ejs = require("ejs");
 const bodyParser = require("body-parser");
@@ -8,13 +9,12 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
-mongoose.connect(
-  "mongodb+srv://gentleatif:a82268T@@cluster0.o0zy1.mongodb.net/loversDB",
-  {
+mongoose
+  .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-  }
-);
+  })
+  .then(() => console.log("DB Connected!"));
 let firstName = "";
 let secondName = "";
 const loverSchema = new mongoose.Schema({
@@ -48,7 +48,7 @@ app.get("/about", function (req, res) {
 
 app.get("/calculate", function (req, res) {
   var randomNo = "";
-  if (firstName === "Zurraik") {
+  if (firstName === "Atif") {
     randomNo = 100;
   } else {
     randomNo = Math.floor(Math.random() * 100 + 1);
