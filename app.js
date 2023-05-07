@@ -57,5 +57,5 @@ app.get("/calculate", function (req, res) {
   res.render("result", { data: randomNo });
 });
 app.listen(PORT, function () {
-  console.log(`server is running on port 3000 ${PORT}`);
+  console.log(`server is running on port ${PORT}`);
 });
