@@ -118,8 +118,9 @@ input[type="text"]::placeholder {
   text-align: center;
   font-style: normal;
 }
+.email-1,
 .about {
-  color: #1597bb;
+  color: #fa1e0e !important;
 }
 .result-div {
   height: 50vh;
